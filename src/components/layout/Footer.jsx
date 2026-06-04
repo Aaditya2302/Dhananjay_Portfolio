@@ -61,6 +61,9 @@ const Footer = () => {
             >
               <i className="fa-brands fa-x-twitter"></i>
             </a>
+            <div>
+              hello
+            </div>
           </div>
         </div>
 
