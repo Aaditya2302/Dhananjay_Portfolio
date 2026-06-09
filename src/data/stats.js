@@ -1,6 +1,6 @@
 export const statsData = [
   {
-    target: 20,
+    target: 30,
     suffix: '+',
     icon: 'fa-solid fa-briefcase',
     title: 'Years Administrative Experience',
@@ -9,7 +9,7 @@ export const statsData = [
     target: 1,
     suffix: 'st',
     icon: 'fa-solid fa-users',
-    title: 'State President Bihar Teacher Association',
+    title: 'State President Bihar Pradesh Teacher Association',
   },
   {
     target: 350,

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import heroBg from '../../assets/images/hero-bg.png'
+import profilePhoto from '../../assets/images/client_photo.jpeg'
 
 const Hero = () => {
   const handleScrollTo = (e, targetId) => {
@@ -83,7 +84,7 @@ const Hero = () => {
               className="text-[1.15rem] md:text-[1.35rem] font-medium text-accent-gold-light mb-6 border-l-3 border-accent-gold pl-4 leading-[1.4] font-poppins"
               variants={itemVariants}
             >
-              Independent Director Aspirant | MSME Export Mentor | Education Leader
+              Independent Director Aspirant | MSME Export Mentor | Education Leader | Educationist | Economist | Numerologist
             </motion.p>
             
             <motion.p
@@ -95,8 +96,8 @@ const Hero = () => {
             
             <motion.div className="flex flex-wrap gap-4" variants={itemVariants}>
               <a
-                href="#contact"
-                onClick={(e) => handleScrollTo(e, '#contact')}
+                href="#booking"
+                onClick={(e) => handleScrollTo(e, '#booking')}
                 className="bg-accent-gold text-primary-navy-dark hover:bg-accent-gold-dark hover:text-bg-light px-8 py-3.5 rounded-full font-semibold text-[0.95rem] transition-all duration-[400ms] ease-premium shadow-[0_4px_14px_rgba(197,160,89,0.3)] hover:shadow-[0_6px_20px_rgba(197,160,89,0.4)] flex items-center gap-2 hover:-translate-y-0.5 cursor-pointer font-poppins"
                 aria-label="Book a consultation with Dhananjay Singh"
               >
@@ -121,18 +122,13 @@ const Hero = () => {
             {/* Decors */}
             <div className="relative w-[280px] h-[330px] md:w-[320px] md:h-[380px] rounded-2xl overflow-hidden border-2 border-accent-gold/40 shadow-premium z-[2]">
               <div className="w-full h-full bg-gradient-to-br from-primary-navy-light to-primary-navy-dark flex flex-col justify-center items-center text-center p-6 select-none font-poppins">
-                <svg
-                  width="140"
-                  height="140"
-                  viewBox="0 0 100 100"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="mb-4"
-                >
-                  <circle cx="50" cy="50" r="46" stroke="#C5A059" strokeWidth="2" fill="#172A45" />
-                  <path d="M50 22 C42 22 35 29 35 38 C35 47 42 54 50 54 C58 54 65 47 65 38 C65 29 58 22 50 22 Z" fill="#C5A059" />
-                  <path d="M22 78 C22 65 34 61 50 61 C66 61 78 65 78 78 C78 81 76 82 74 82 L26 82 C24 82 22 81 22 78 Z" fill="#C5A059" />
-                </svg>
+                <div className="w-[170px] h-[170px] rounded-full border-2 border-accent-gold overflow-hidden mb-4 bg-primary-navy-light">
+                  <img
+                    src={profilePhoto}
+                    alt="Dhananjay Singh"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
                 <span className="font-montserrat font-bold text-[1.5rem] text-bg-light mb-1">
                   Dhananjay Singh
                 </span>
@@ -148,7 +144,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll Down mouse icon */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-text-secondary text-[0.75rem] font-medium tracking-[2px] uppercase select-none font-poppins">
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-text-secondary text-[0.75rem] font-medium tracking-[2px] uppercase select-none font-poppins z-10">
         <span>Scroll Down</span>
         <div className="w-[24px] h-[40px] border-2 border-text-secondary/50 rounded-full relative">
           <div className="w-[4px] h-[8px] bg-accent-gold rounded-full absolute left-1/2 -translate-x-1/2 scroll-indicator-wheel"></div>

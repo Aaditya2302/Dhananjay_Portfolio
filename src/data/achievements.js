@@ -48,4 +48,11 @@ export const achievementsData = [
     iconClass: 'fa-solid fa-users-line',
     title: 'Rural Literacy Support Drive',
   },
+  {
+    id: 7,
+    category: 'social',
+    categoryLabel: 'Social Welfare',
+    iconClass: 'fa-solid fa-child-reaching',
+    title: 'Safeguard Children Right to Educational Activity',
+  },
 ]
