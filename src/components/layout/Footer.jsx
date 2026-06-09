@@ -34,36 +34,45 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-[16px]">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/dhananjay-singh-aa48171a0?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              target='_blank'
               className="w-10 h-10 border border-text-secondary/20 rounded-full flex justify-center items-center text-text-secondary hover:text-accent-gold hover:border-accent-gold transition-all duration-[200ms]"
               aria-label="LinkedIn"
             >
               <i className="fa-brands fa-linkedin-in"></i>
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/invites/contact/?igsh=tj9bcbykfl7e&utm_content=ey3vgbe"
+              target='_blank'
               className="w-10 h-10 border border-text-secondary/20 rounded-full flex justify-center items-center text-text-secondary hover:text-accent-gold hover:border-accent-gold transition-all duration-[200ms]"
-              aria-label="YouTube"
+              aria-label="Instagram"
             >
-              <i className="fa-brands fa-youtube"></i>
+              <i className="fa-brands fa-instagram"></i>
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/share/1DuVUZj2ba/"
+              target='_blank'
               className="w-10 h-10 border border-text-secondary/20 rounded-full flex justify-center items-center text-text-secondary hover:text-accent-gold hover:border-accent-gold transition-all duration-[200ms]"
               aria-label="Facebook"
             >
               <i className="fa-brands fa-facebook-f"></i>
             </a>
             <a
-              href="#"
+              href="https://twitter.com/biharpradeshta"
+              target='_blank'
               className="w-10 h-10 border border-text-secondary/20 rounded-full flex justify-center items-center text-text-secondary hover:text-accent-gold hover:border-accent-gold transition-all duration-[200ms]"
-              aria-label="X (Twitter)"
+              aria-label="X"
             >
               <i className="fa-brands fa-x-twitter"></i>
             </a>
-            <div>
-              hello
-            </div>
+            <a
+              href="https://youtube.com/@dsinghtr94?si=VuWskoQRRWV6wjZs"
+              target='_blank'
+              className="w-10 h-10 border border-text-secondary/20 rounded-full flex justify-center items-center text-text-secondary hover:text-accent-gold hover:border-accent-gold transition-all duration-[200ms]"
+              aria-label="Youtube"
+            >
+              <i className="fa-brands fa-youtube"></i>
+            </a>
           </div>
         </div>
 
@@ -127,23 +136,6 @@ const Footer = () => {
           <p className="text-text-secondary text-[0.9rem] mb-[20px]">
             Subscribe to receive quarterly insights on MSME export updates and educational administration reforms.
           </p>
-          <form className="flex rounded-[8px] overflow-hidden" onSubmit={handleNewsletterSubmit}>
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="flex-grow bg-primary-navy-light border border-accent-gold/20 border-r-0 px-4 py-3 text-text-primary placeholder-text-secondary/50 text-[0.85rem] focus:outline-none focus:border-accent-gold"
-              placeholder="Your Email Address"
-              required
-              aria-label="Email Address for Newsletter"
-            />
-            <button
-              type="submit"
-              className="bg-accent-gold hover:bg-accent-gold-dark text-primary-navy-dark hover:text-bg-light px-5 font-semibold text-[0.85rem] cursor-pointer transition-all duration-[200ms]"
-            >
-              Join
-            </button>
-          </form>
         </div>
       </div>
 
