@@ -9,6 +9,7 @@ import Hero from './components/sections/Hero'
 import Stats from './components/sections/Stats'
 import About from './components/sections/About'
 import Services from './components/sections/Services'
+import Booking from './components/sections/Booking'
 import ExportTimeline from './components/sections/ExportTimeline'
 import Achievements from './components/sections/Achievements'
 import Research from './components/sections/Research'
@@ -28,6 +29,7 @@ function App() {
         <Stats />
         <About />
         <Services />
+        <Booking />
         <ExportTimeline />
         <Achievements />
         <Research />

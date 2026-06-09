@@ -20,4 +20,11 @@ export const servicesData = [
     linkText: 'Schedule advisory',
     linkHref: '#contact',
   },
+  {
+    icon: 'fa-solid fa-infinity',
+    title: 'Vedic Numerologist',
+    description: 'Offering Vedic numerology guidance for personal growth, business success, name correction, compatibility analysis, and life path insights based on ancient numerical sciences.',
+    linkText: 'Explore numerology',
+    linkHref: '#contact',
+  },
 ]

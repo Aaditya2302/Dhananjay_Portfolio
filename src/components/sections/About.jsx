@@ -68,10 +68,16 @@ const About = () => {
               </div>
             </div>
             {/* Overlay Badge */}
-            <div className="absolute bottom-[30px] -right-2 sm:-right-[20px] bg-primary-navy border-2 border-accent-gold rounded-2xl p-4 sm:p-[16px_24px] shadow-lg flex items-center gap-[16px] max-w-[260px] text-bg-light z-10">
+            <div className="relative top-[10px] -right-2 sm:-right-[65px] bg-primary-navy border-2 border-accent-gold rounded-2xl p-4 sm:p-[16px_24px] shadow-lg flex items-center gap-[16px] max-w-[260px] text-bg-light z-10">
               <i className="fa-solid fa-award text-[2rem] text-accent-gold shrink-0"></i>
               <p className="text-[0.85rem] font-medium text-text-secondary leading-[1.3]">
                 Recognized for <span className="block font-montserrat text-[1.1rem] font-bold text-bg-white mt-0.5">Social welfare & trade mentoring</span> in Bihar region
+              </p>
+            </div>
+            <div className="relative top-[20px] -right-2 sm:-right-[65px] bg-primary-navy border-2 border-accent-gold rounded-2xl p-4 sm:p-[16px_24px] shadow-lg flex items-center gap-[16px] max-w-[260px] text-bg-light z-10">
+              <i className="fa-solid fa-award text-[2rem] text-accent-gold shrink-0"></i>
+              <p className="text-[0.85rem] font-medium text-text-secondary leading-[1.3]">
+                Recognized for <span className="block font-montserrat text-[1.1rem] font-bold text-bg-white mt-0.5">Member, Distric education dialogue committee (R.T.E Gaya)</span>
               </p>
             </div>
           </motion.div>

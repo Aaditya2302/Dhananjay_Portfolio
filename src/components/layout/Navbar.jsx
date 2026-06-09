@@ -89,8 +89,8 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="#contact"
-            onClick={(e) => handleLinkClick(e, '#contact')}
+            href="#booking"
+            onClick={(e) => handleLinkClick(e, '#booking')}
             className="border-2 border-accent-gold text-accent-gold px-5 py-2 rounded-full font-semibold text-[0.85rem] transition-all duration-[200ms] hover:bg-accent-gold hover:text-primary-navy-dark hover:shadow-[0_0_15px_rgba(197,160,89,0.3)] font-poppins"
           >
             Book Consultation
@@ -143,8 +143,8 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="#contact"
-            onClick={(e) => handleLinkClick(e, '#contact')}
+            href="#booking"
+            onClick={(e) => handleLinkClick(e, '#booking')}
             className="border-2 border-accent-gold text-accent-gold px-6 py-2.5 rounded-full font-semibold text-[0.9rem] transition-all duration-[200ms] hover:bg-accent-gold hover:text-primary-navy-dark"
           >
             Book Consultation

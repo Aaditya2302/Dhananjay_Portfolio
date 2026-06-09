@@ -33,7 +33,7 @@ const FloatingActions = () => {
     <div className="fixed bottom-[30px] right-[30px] flex flex-col gap-4 z-[999] font-poppins">
       {/* WhatsApp Button */}
       <a
-        href="https://wa.me/910000000000?text=Hello%20Dhananjay%20ji,%20I%20would%20like%20to%20consult%20about..."
+        href="https://wa.me/918340543370?text=Hello%20Dhananjay%20ji,%20I%20would%20like%20to%20consult%20about..."
         target="_blank"
         rel="noopener noreferrer"
         className="w-[50px] h-[50px] rounded-full flex justify-center items-center bg-[#25D366] text-white text-[1.6rem] shadow-md hover:bg-[#20BA5A] hover:scale-[1.1] transition-all duration-[400ms] ease-premium whatsapp-btn-pulse cursor-pointer"
