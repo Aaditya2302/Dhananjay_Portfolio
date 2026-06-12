@@ -144,7 +144,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll Down mouse icon */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-text-secondary text-[0.75rem] font-medium tracking-[2px] uppercase select-none font-poppins z-10">
+      <div className="hidden md:flex absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-text-secondary text-[0.75rem] font-medium tracking-[2px] uppercase select-none font-poppins z-10">
         <span>Scroll Down</span>
         <div className="w-[24px] h-[40px] border-2 border-text-secondary/50 rounded-full relative">
           <div className="w-[4px] h-[8px] bg-accent-gold rounded-full absolute left-1/2 -translate-x-1/2 scroll-indicator-wheel"></div>
