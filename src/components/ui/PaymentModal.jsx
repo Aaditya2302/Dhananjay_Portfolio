@@ -3,7 +3,6 @@ import qrCode from '../../assets/images/phone_qr.jpeg'
 
 
 const UPI_ID = import.meta.env.VITE_UPI_ID;
-console.log(UPI_ID)
 const WHATSAPP_NUMBER = '919625681776'
 
 const PaymentModal = ({ onClose, userName, service }) => {
