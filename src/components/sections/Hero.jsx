@@ -59,7 +59,7 @@ const Hero = () => {
 
       <div className="w-full max-w-[1200px] mx-auto px-6 z-[2]">
         <motion.div
-          className="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-[40px] items-center"
+          className="grid grid-cols-1 md:grid-cols-[0.9fr_1.1fr] lg:grid-cols-[1.2fr_0.8fr] gap-[40px] items-center"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -72,28 +72,28 @@ const Hero = () => {
             >
               Leadership & Policy Advisory
             </motion.p>
-            
+
             <motion.h1
-              className="text-[3rem] md:text-[4rem] font-extrabold text-bg-white mb-3 tracking-[-1px] font-montserrat leading-[1.1]"
+              className="text-[2.5rem] sm:text-[3rem] lg:text-[4rem] font-extrabold text-bg-white mb-3 tracking-[-1px] font-montserrat leading-[1.1]"
               variants={itemVariants}
             >
               Dhananjay Singh
             </motion.h1>
-            
+
             <motion.p
               className="text-[1.15rem] md:text-[1.35rem] font-medium text-accent-gold-light mb-6 border-l-3 border-accent-gold pl-4 leading-[1.4] font-poppins"
               variants={itemVariants}
             >
               Independent Director Aspirant | MSME Export Mentor | Education Leader | Educationist | Economist | Numerologist
             </motion.p>
-            
+
             <motion.p
               className="text-[1.05rem] text-text-secondary mb-10 max-w-[600px] leading-[1.6] font-poppins"
               variants={itemVariants}
             >
-              Empowering MSMEs to scale internationally, strengthening secondary & higher education governance, and advocating social welfare with over 20 years of dedication in teacher welfare, policy reforms, and trade mentorship.
+              Empowering MSMEs to scale internationally, strengthening elementary to higher education governance, and advocating social welfare with over 30 years of dedication in teacher welfare, policy reforms, and trade mentorship.
             </motion.p>
-            
+
             <motion.div className="flex flex-wrap gap-4" variants={itemVariants}>
               <a
                 href="#booking"
@@ -116,7 +116,7 @@ const Hero = () => {
 
           {/* Portrait Fallback Right */}
           <motion.div
-            className="relative flex justify-center items-center order-first lg:order-none"
+            className="relative flex justify-center items-center order-first md:order-none"
             variants={graphicVariants}
           >
             {/* Decors */}
@@ -138,7 +138,7 @@ const Hero = () => {
               </div>
             </div>
             {/* Decor Frame Offset */}
-            <div className="absolute w-[280px] h-[330px] md:w-[320px] md:h-[380px] border-2 border-accent-gold rounded-2xl top-5 left-5 md:top-5 md:left-5 z-[1]"></div>
+            <div className="absolute h-[330px]w-[280px] md:w-[320px] md:h-[380px] border-2 border-accent-gold rounded-2xl top-4 left-4 md:top-5 md:left-5 z-[1]"></div>
           </motion.div>
         </motion.div>
       </div>
