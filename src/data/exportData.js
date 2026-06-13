@@ -39,7 +39,7 @@ export const exportSectors = [
   },
   {
     icon: 'fa-solid fa-spa',
-    title: 'Wellness & Organic Products',
+    title: 'Wellness, Healing and Energy Products',
     description: 'Herbal remedies, essential oils, traditional superfoods',
   },
 ]

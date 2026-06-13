@@ -63,22 +63,32 @@ const About = () => {
                   Dhananjay Singh
                 </h4>
                 <p className="text-text-secondary text-[0.9rem] leading-[1.4]">
-                  Bihar Teacher Association President, MSME Advisor, Policy Advocate
+                  Bihar Pradesh Teacher Association(BPTA), State President, MSME Advisor, Policy Advocate
                 </p>
               </div>
             </div>
-            {/* Overlay Badge */}
-            <div className="relative top-[10px] -right-2 sm:-right-[65px] bg-primary-navy border-2 border-accent-gold rounded-2xl p-4 sm:p-[16px_24px] shadow-lg flex items-center gap-[16px] max-w-[260px] text-bg-light z-10">
-              <i className="fa-solid fa-award text-[2rem] text-accent-gold shrink-0"></i>
-              <p className="text-[0.85rem] font-medium text-text-secondary leading-[1.3]">
-                Recognized for <span className="block font-montserrat text-[1.1rem] font-bold text-bg-white mt-0.5">Social welfare & trade mentoring</span> in Bihar region
-              </p>
-            </div>
-            <div className="relative top-[20px] -right-2 sm:-right-[65px] bg-primary-navy border-2 border-accent-gold rounded-2xl p-4 sm:p-[16px_24px] shadow-lg flex items-center gap-[16px] max-w-[260px] text-bg-light z-10">
-              <i className="fa-solid fa-award text-[2rem] text-accent-gold shrink-0"></i>
-              <p className="text-[0.85rem] font-medium text-text-secondary leading-[1.3]">
-                Recognized for <span className="block font-montserrat text-[1.1rem] font-bold text-bg-white mt-0.5">Member, Distric education dialogue committee (R.T.E Gaya)</span>
-              </p>
+            {/* Overlay Badges */}
+            <div className="flex flex-col items-center lg:items-start gap-4 mt-4 lg:ml-[60px]">
+              <div className="bg-primary-navy border-2 border-accent-gold rounded-2xl p-4 sm:p-[16px_24px] shadow-lg flex items-center gap-[16px] max-w-[260px] text-bg-light z-10">
+                <i className="fa-solid fa-award text-[2rem] text-accent-gold shrink-0"></i>
+                <p className="text-[0.85rem] font-medium text-text-secondary leading-[1.3]">
+                  Recognized for{" "}
+                  <span className="block font-montserrat text-[1.1rem] font-bold text-bg-white mt-0.5">
+                    Social Welfare & Trade Mentoring
+                  </span>{" "}
+                  in Bihar region
+                </p>
+              </div>
+
+              <div className="bg-primary-navy border-2 border-accent-gold rounded-2xl p-4 sm:p-[16px_24px] shadow-lg flex items-center gap-[16px] max-w-[260px] text-bg-light z-10">
+                <i className="fa-solid fa-award text-[2rem] text-accent-gold shrink-0"></i>
+                <p className="text-[0.85rem] font-medium text-text-secondary leading-[1.3]">
+                  Recognized for{" "}
+                  <span className="block font-montserrat text-[1.1rem] font-bold text-bg-white mt-0.5">
+                    Member, District Education Dialogue Committee (R.T.E.), Gaya
+                  </span>
+                </p>
+              </div>
             </div>
           </motion.div>
 
@@ -91,7 +101,7 @@ const About = () => {
               About Dhananjay Singh
             </motion.h2>
             <motion.p className="text-[1rem] text-text-secondary leading-[1.7] mb-6" variants={revealVariants}>
-              Dhananjay Singh is an education administrator, trade mentor, and socio-economic reformer based in Gaya, Bihar. Serving as the <strong className="text-primary-navy font-semibold">State President of the Bihar Pradesh Teacher Association</strong>, he spearheads welfare advocacy and policies supporting secondary education. As an <strong className="text-primary-navy font-semibold">MSME Export Mentor</strong>, he drives economic growth by mentoring local handcraft, agricultural, and wellness business owners to expand into global markets. Dedicated to transparency and ethics, he is preparing for governance leadership as an <strong className="text-primary-navy font-semibold">Independent Director Aspirant</strong>.
+              Dhananjay Singh is an education administrator, trade mentor, and socio-economic reformer based in Gaya, Bihar. Serving as the <strong className="text-primary-navy font-semibold">State President of the Bihar Pradesh Teacher Association</strong>, he spearheads welfare advocacy and policies supporting secondary education. As an <strong className="text-primary-navy font-semibold">MSME Export Mentor</strong>, he drives economic growth by mentoring local handcraft, agricultural, and wellness business owners to expand into global markets. Dedicated to transparency and ethics, he is preparing for governance leadership as an <strong className="text-primary-navy font-semibold">Independent Director</strong>.
             </motion.p>
 
             {/* Mission Statement Box */}
@@ -108,7 +118,7 @@ const About = () => {
             <motion.h3 className="font-montserrat font-bold text-[1.25rem] text-primary-navy mb-6" variants={revealVariants}>
               Leadership Timeline
             </motion.h3>
-            
+
             <div className="relative border-l-2 border-accent-gold/20 pl-6 ml-2 flex flex-col gap-6">
               {aboutTimelineData.map((item, idx) => (
                 <motion.div
@@ -118,7 +128,7 @@ const About = () => {
                 >
                   {/* Timeline Dot Indicator */}
                   <span className="absolute -left-[31px] top-1.5 w-4 h-4 bg-bg-white border-2 border-accent-gold rounded-full z-10"></span>
-                  
+
                   <div className="text-accent-gold font-bold text-[0.875rem] tracking-wider uppercase mb-1">
                     {item.years}
                   </div>

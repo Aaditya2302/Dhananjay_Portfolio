@@ -8,7 +8,7 @@ export const testimonialsData = [
   },
   {
     id: 2,
-    text: "As a local agro-producer, exporting was a distant dream due to custom bottlenecks. Under Dhananjay's export mentoring program, we got our IEC and successfully shipped our first cargo of Makhana.",
+    text: "As a local agro-producer, exporting was a distant dream due to custom bottlenecks. Under Dhananjay's export mentoring programme, we got our IEC and successfully shipped our first cargo of Makhana.",
     authorInitials: 'SM',
     authorName: 'Satyendra Mishra',
     authorTitle: 'Founder, Mithila Agro Exports',
