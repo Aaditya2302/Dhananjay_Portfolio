@@ -2,7 +2,7 @@ export const servicesData = [
   {
     icon: 'fa-solid fa-ship',
     title: 'MSME Export Advisory',
-    description: 'Providing end-to-end consulting for businesses looking to export from Bihar. Includes registration processes, export documentation, international trade policies, logistics, and target market analyses.',
+    description: 'Providing end-to-end Consultation for businesses looking to export from Bihar. Includes registration processes, export documentation, international trade policies, logistics, and target market analyses.',
     linkText: 'Learn export process',
     linkHref: '#export',
   },
