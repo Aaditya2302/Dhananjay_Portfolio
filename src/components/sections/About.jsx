@@ -89,6 +89,15 @@ const About = () => {
                   </span>
                 </p>
               </div>
+              <div className="bg-primary-navy border-2 border-accent-gold rounded-2xl p-4 sm:p-[16px_24px] shadow-lg flex items-center gap-[16px] max-w-[260px] text-bg-light z-10">
+                <i className="fa-solid fa-award text-[2rem] text-accent-gold shrink-0"></i>
+                <p className="text-[0.85rem] font-medium text-text-secondary leading-[1.3]">
+                  Recognized for{" "}
+                  <span className="block font-montserrat text-[1.1rem] font-bold text-bg-white mt-0.5">
+                  Vedic Numerology Consultant
+                  </span>
+                </p>
+              </div>
             </div>
           </motion.div>
 
@@ -101,7 +110,7 @@ const About = () => {
               About Dhananjay Singh
             </motion.h2>
             <motion.p className="text-[1rem] text-text-secondary leading-[1.7] mb-6" variants={revealVariants}>
-              Dhananjay Singh is an education administrator, trade mentor, and socio-economic reformer based in Gaya, Bihar. Serving as the <strong className="text-primary-navy font-semibold">State President of the Bihar Pradesh Teacher Association</strong>, he spearheads welfare advocacy and policies supporting secondary education. As an <strong className="text-primary-navy font-semibold">MSME Export Mentor</strong>, he drives economic growth by mentoring local handcraft, agricultural, and wellness business owners to expand into global markets. Dedicated to transparency and ethics, he is preparing for governance leadership as an <strong className="text-primary-navy font-semibold">Independent Director</strong>.
+              Dhananjay Singh is an education administrator, trade mentor, <strong className="text-primary-navy font-semibold">well known expert in Vedic Numerology</strong> and socio-economic reformer based in Gaya, Bihar. Serving as the <strong className="text-primary-navy font-semibold">State President of the Bihar Pradesh Teacher Association</strong>, he spearheads welfare advocacy and policies supporting secondary education. As an <strong className="text-primary-navy font-semibold">MSME Export Mentor</strong>, he drives economic growth by mentoring local handcraft, agricultural, and wellness business owners to expand into global markets. Dedicated to transparency and ethics, he is preparing for governance leadership as an <strong className="text-primary-navy font-semibold">Independent Director</strong>.
             </motion.p>
 
             {/* Mission Statement Box */}
