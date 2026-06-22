@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dhananjay-portfolio-three.vercel.app/sitemap.xml
+Sitemap: https://dhananjaysinghvision.com/sitemap.xml
