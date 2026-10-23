@@ -68,8 +68,33 @@ const Gallery = () => {
                 onClick={() => !item.videoLink && !item.fbLink && handleCardClick(item)}
                 className={`bg-bg-light border border-primary-navy/5 rounded-2xl relative overflow-hidden group aspect-[4/3] shadow-sm select-none ${!item.videoLink && !item.fbLink ? 'cursor-pointer' : 'cursor-default'}`}
               >
-                {/* Visual Content */}
-                <div className="w-full h-full flex flex-col justify-center items-center text-center p-6 bg-gradient-to-br from-primary-navy-light to-primary-navy-dark text-bg-light transition-all duration-[400ms] group-hover:scale-[1.05]">
+                {/* Mobile Layout */}
+                <div className="md:hidden w-full h-full flex flex-col justify-center items-center text-center p-6 bg-gradient-to-br from-primary-navy-light to-primary-navy-dark">
+                  <i className={`${item.iconClass} text-[3rem] text-accent-gold mb-4`}></i>
+                  <h5 className="font-montserrat font-bold text-[1.1rem] leading-[1.4] text-bg-white mb-2 max-w-[220px]">
+                    {item.title}
+                  </h5>
+                  <p className="text-text-secondary text-[0.8rem] tracking-wider uppercase font-semibold mb-4">
+                    {item.categoryLabel}
+                  </p>
+                  <div className="flex flex-col gap-2 items-center">
+                    {item.videoLink && (
+                      <a href={item.videoLink} target="_blank" rel="noopener noreferrer"
+                        className="flex items-center gap-2 bg-accent-gold text-primary-navy-dark px-5 py-2 rounded-full font-semibold text-[0.8rem]">
+                        <i className="fa-solid fa-circle-play text-[0.9rem]"></i> Watch Video
+                      </a>
+                    )}
+                    {item.fbLink && (
+                      <a href={item.fbLink} target="_blank" rel="noopener noreferrer"
+                        className="flex items-center gap-2 bg-accent-gold text-primary-navy-dark px-5 py-2 rounded-full font-semibold text-[0.8rem]">
+                        <i className="fa-brands fa-facebook text-[0.9rem]"></i> View Post
+                      </a>
+                    )}
+                  </div>
+                </div>
+
+                {/* Desktop Visual */}
+                <div className="hidden md:flex w-full h-full flex-col justify-center items-center text-center p-6 bg-gradient-to-br from-primary-navy-light to-primary-navy-dark text-bg-light transition-all duration-[400ms] group-hover:scale-[1.05]">
                   <i className={`${item.iconClass} text-[3rem] text-accent-gold mb-4`}></i>
                   <h5 className="font-montserrat font-bold text-[1.1rem] leading-[1.4] text-bg-white mb-2 max-w-[220px]">
                     {item.title}
@@ -79,11 +104,9 @@ const Gallery = () => {
                   </p>
                 </div>
 
-                {/* Overlay — always visible on mobile, hover on desktop */}
-                <div className="absolute inset-0 bg-primary-navy/95 border border-accent-gold/50 flex flex-col justify-center items-center text-center p-6 transition-all duration-[450ms] ease-premium
-    opacity-100 translate-y-0
-    md:opacity-0 md:translate-y-3 md:group-hover:opacity-100 md:group-hover:translate-y-0">
-                  <i className="fa-solid fa-maximize text-[1.5rem] text-accent-gold mb-3 hidden md:block"></i>
+                {/* Desktop Hover Overlay */}
+                <div className="hidden md:flex absolute inset-0 bg-primary-navy/95 border border-accent-gold/50 flex-col justify-center items-center text-center p-6 opacity-0 group-hover:opacity-100 transition-all duration-[450ms] ease-premium translate-y-3 group-hover:translate-y-0">
+                  <i className="fa-solid fa-maximize text-[1.5rem] text-accent-gold mb-3"></i>
                   <h5 className="font-montserrat font-bold text-[1.15rem] text-bg-white mb-1 leading-[1.3] max-w-[220px]">
                     {item.title}
                   </h5>
@@ -92,24 +115,16 @@ const Gallery = () => {
                   </p>
                   <div className="flex flex-col gap-2 w-full items-center">
                     {item.videoLink && (
-                      <a
-                        href={item.videoLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                      <a href={item.videoLink} target="_blank" rel="noopener noreferrer"
                         className="flex items-center gap-2 bg-accent-gold text-primary-navy-dark px-5 py-2 rounded-full font-semibold text-[0.8rem] hover:bg-accent-gold-dark transition-all duration-200"
-                        onClick={(e) => e.stopPropagation()}
-                      >
+                        onClick={(e) => e.stopPropagation()}>
                         <i className="fa-solid fa-circle-play text-[0.9rem]"></i> Watch Video
                       </a>
                     )}
                     {item.fbLink && (
-                      <a
-                        href={item.fbLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                      <a href={item.fbLink} target="_blank" rel="noopener noreferrer"
                         className="flex items-center gap-2 bg-accent-gold text-primary-navy-dark px-5 py-2 rounded-full font-semibold text-[0.8rem] hover:bg-accent-gold-dark transition-all duration-200"
-                        onClick={(e) => e.stopPropagation()}
-                      >
+                        onClick={(e) => e.stopPropagation()}>
                         <i className="fa-brands fa-facebook text-[0.9rem]"></i> View Post
                       </a>
                     )}
