@@ -54,7 +54,7 @@ const Achievements = () => {
                 transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
                 className="bg-bg-light border border-primary-navy/5 rounded-2xl relative overflow-hidden group aspect-[4/3] shadow-sm select-none cursor-default"
               >
-                {/* Visual Placeholder Content inside card */}
+                {/* Visual Content */}
                 <div className="w-full h-full flex flex-col justify-center items-center text-center p-6 bg-gradient-to-br from-primary-navy-light to-primary-navy-dark text-bg-light transition-all duration-[400ms] group-hover:scale-[1.05]">
                   <i className={`${item.iconClass} text-[3rem] text-accent-gold mb-4`}></i>
                   <h5 className="font-montserrat font-bold text-[1.1rem] leading-[1.4] text-bg-white mb-2 max-w-[220px]">
@@ -65,9 +65,11 @@ const Achievements = () => {
                   </p>
                 </div>
 
-                {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-primary-navy/95 border border-accent-gold/50 flex flex-col justify-center items-center text-center p-6 opacity-0 group-hover:opacity-100 transition-all duration-[450ms] ease-premium translate-y-3 group-hover:translate-y-0">
-                  <i className="fa-solid fa-magnifying-glass-plus text-[1.5rem] text-accent-gold mb-3"></i>
+                {/* Overlay — always visible on mobile, hover on desktop */}
+                <div className="absolute inset-0 bg-primary-navy/95 border border-accent-gold/50 flex flex-col justify-center items-center text-center p-6 transition-all duration-[450ms] ease-premium
+    opacity-100 translate-y-0
+    md:opacity-0 md:translate-y-3 md:group-hover:opacity-100 md:group-hover:translate-y-0">
+                  <i className="fa-solid fa-magnifying-glass-plus text-[1.5rem] text-accent-gold mb-3 hidden md:block"></i>
                   <h5 className="font-montserrat font-bold text-[1.15rem] text-bg-white mb-1 leading-[1.3] max-w-[220px]">
                     {item.title}
                   </h5>

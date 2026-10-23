@@ -42,8 +42,8 @@ const Gallery = () => {
               key={category.id}
               onClick={() => setActiveFilter(category.id)}
               className={`px-5 py-2.5 rounded-full text-[0.85rem] font-semibold border-2 cursor-pointer transition-all duration-[200ms] ease-premium focus:outline-none ${activeFilter === category.id
-                  ? 'bg-accent-gold border-accent-gold text-primary-navy-dark shadow-[0_4px_12px_rgba(197,160,89,0.3)]'
-                  : 'bg-transparent border-primary-navy/10 text-primary-navy hover:border-accent-gold hover:text-accent-gold'
+                ? 'bg-accent-gold border-accent-gold text-primary-navy-dark shadow-[0_4px_12px_rgba(197,160,89,0.3)]'
+                : 'bg-transparent border-primary-navy/10 text-primary-navy hover:border-accent-gold hover:text-accent-gold'
                 }`}
             >
               {category.label}
@@ -65,10 +65,10 @@ const Gallery = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.85 }}
                 transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
-                onClick={() => handleCardClick(item)}
-                className="bg-bg-light border border-primary-navy/5 rounded-2xl relative overflow-hidden group aspect-[4/3] shadow-sm select-none cursor-pointer"
+                onClick={() => !item.videoLink && !item.fbLink && handleCardClick(item)}
+                className={`bg-bg-light border border-primary-navy/5 rounded-2xl relative overflow-hidden group aspect-[4/3] shadow-sm select-none ${!item.videoLink && !item.fbLink ? 'cursor-pointer' : 'cursor-default'}`}
               >
-                {/* Visual Placeholder Content */}
+                {/* Visual Content */}
                 <div className="w-full h-full flex flex-col justify-center items-center text-center p-6 bg-gradient-to-br from-primary-navy-light to-primary-navy-dark text-bg-light transition-all duration-[400ms] group-hover:scale-[1.05]">
                   <i className={`${item.iconClass} text-[3rem] text-accent-gold mb-4`}></i>
                   <h5 className="font-montserrat font-bold text-[1.1rem] leading-[1.4] text-bg-white mb-2 max-w-[220px]">
@@ -79,9 +79,11 @@ const Gallery = () => {
                   </p>
                 </div>
 
-                {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-primary-navy/95 border border-accent-gold/50 flex flex-col justify-center items-center text-center p-6 opacity-0 group-hover:opacity-100 transition-all duration-[450ms] ease-premium translate-y-3 group-hover:translate-y-0">
-                  <i className="fa-solid fa-maximize text-[1.5rem] text-accent-gold mb-3"></i>
+                {/* Overlay — always visible on mobile, hover on desktop */}
+                <div className="absolute inset-0 bg-primary-navy/95 border border-accent-gold/50 flex flex-col justify-center items-center text-center p-6 transition-all duration-[450ms] ease-premium
+    opacity-100 translate-y-0
+    md:opacity-0 md:translate-y-3 md:group-hover:opacity-100 md:group-hover:translate-y-0">
+                  <i className="fa-solid fa-maximize text-[1.5rem] text-accent-gold mb-3 hidden md:block"></i>
                   <h5 className="font-montserrat font-bold text-[1.15rem] text-bg-white mb-1 leading-[1.3] max-w-[220px]">
                     {item.title}
                   </h5>
