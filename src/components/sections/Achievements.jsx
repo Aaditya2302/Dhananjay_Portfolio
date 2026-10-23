@@ -28,11 +28,10 @@ const Achievements = () => {
             <button
               key={category.id}
               onClick={() => setActiveFilter(category.id)}
-              className={`px-5 py-2.5 rounded-full text-[0.85rem] font-semibold border-2 cursor-pointer transition-all duration-[200ms] ease-premium focus:outline-none ${
-                activeFilter === category.id
-                  ? 'bg-accent-gold border-accent-gold text-primary-navy-dark shadow-[0_4px_12px_rgba(197,160,89,0.3)]'
-                  : 'bg-transparent border-primary-navy/10 text-primary-navy hover:border-accent-gold hover:text-accent-gold'
-              }`}
+              className={`px-5 py-2.5 rounded-full text-[0.85rem] font-semibold border-2 cursor-pointer transition-all duration-[200ms] ease-premium focus:outline-none ${activeFilter === category.id
+                ? 'bg-accent-gold border-accent-gold text-primary-navy-dark shadow-[0_4px_12px_rgba(197,160,89,0.3)]'
+                : 'bg-transparent border-primary-navy/10 text-primary-navy hover:border-accent-gold hover:text-accent-gold'
+                }`}
             >
               {category.label}
             </button>
@@ -72,9 +71,44 @@ const Achievements = () => {
                   <h5 className="font-montserrat font-bold text-[1.15rem] text-bg-white mb-1 leading-[1.3] max-w-[220px]">
                     {item.title}
                   </h5>
-                  <p className="text-accent-gold text-[0.8rem] tracking-wider uppercase font-semibold">
+                  <p className="text-accent-gold text-[0.8rem] tracking-wider uppercase font-semibold mb-4">
                     {item.categoryLabel}
                   </p>
+                  <div className="flex flex-col gap-2 w-full items-center">
+                    {item.videoLink && (
+                      <a
+                        href={item.videoLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 bg-accent-gold text-primary-navy-dark px-5 py-2 rounded-full font-semibold text-[0.8rem] hover:bg-accent-gold-dark transition-all duration-200"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <i className="fa-solid fa-circle-play text-[0.9rem]"></i> Watch Video
+                      </a>
+                    )}
+                    {item.fbLink && (
+                      <a
+                        href={item.fbLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 bg-accent-gold text-primary-navy-dark px-5 py-2 rounded-full font-semibold text-[0.8rem] hover:bg-accent-gold-dark transition-all duration-200"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <i className="fa-brands fa-facebook text-[0.9rem]"></i> View Post
+                      </a>
+                    )}
+                    {item.folderLink && (
+                      <a
+                        href={item.folderLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 bg-accent-gold text-primary-navy-dark px-5 py-2 rounded-full font-semibold text-[0.8rem] hover:bg-accent-gold-dark transition-all duration-200"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <i className="fa-solid fa-folder-open text-[0.9rem]"></i> View Documents
+                      </a>
+                    )}
+                  </div>
                 </div>
               </motion.div>
             ))}

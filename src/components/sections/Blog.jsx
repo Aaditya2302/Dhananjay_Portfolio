@@ -1,15 +1,8 @@
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { blogData } from '../../data/blog'
 
 const Blog = () => {
-  const handleScrollTo = (e, targetId) => {
-    e.preventDefault()
-    const targetElement = document.querySelector(targetId)
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-
   // Animation variants
   const containerVariants = {
     hidden: {},
@@ -27,7 +20,7 @@ const Blog = () => {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: [0.4, 0, 0.2, 1], // ease-premium
+        ease: [0.4, 0, 0.2, 1],
       },
     },
   }
@@ -77,19 +70,30 @@ const Blog = () => {
                   <h4 className="font-montserrat font-bold text-[1.1rem] text-primary-navy mb-3 leading-[1.4] group-hover:text-accent-gold transition-colors duration-[200ms]">
                     {post.title}
                   </h4>
-                  
+
                   <p className="text-text-secondary text-[0.85rem] leading-[1.5] mb-5">
                     {post.desc}
                   </p>
                 </div>
 
-                <a
-                  href="#contact"
-                  onClick={(e) => handleScrollTo(e, '#contact')}
-                  className="text-primary-navy hover:text-accent-gold font-semibold text-[0.85rem] flex items-center gap-1 mt-auto"
-                >
-                  Read Article <i className="fa-solid fa-chevron-right text-[0.7rem] ml-0.5"></i>
-                </a>
+                {/* Buttons */}
+                <div className="flex items-center gap-4 mt-auto">
+                  <a
+                    href={post.pdfPath}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary-navy hover:text-accent-gold font-semibold text-[0.85rem] flex items-center gap-1 transition-colors duration-200"
+                  >
+                    Read Article <i className="fa-solid fa-chevron-right text-[0.7rem] ml-0.5"></i>
+                  </a>
+                  <a
+                    href={post.pdfPath}
+                    download
+                    className="text-text-secondary hover:text-accent-gold font-semibold text-[0.85rem] flex items-center gap-1.5 transition-colors duration-200"
+                  >
+                    <i className="fa-solid fa-download text-[0.75rem]"></i> Download
+                  </a>
+                </div>
               </div>
             </motion.article>
           ))}

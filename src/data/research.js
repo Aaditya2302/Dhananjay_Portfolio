@@ -5,7 +5,7 @@ export const researchData = [
     category: 'Education Reform',
     title: 'Mitigating Educational Inequalities in Rural Bihar: Administrative Obstacles & Reforms',
     desc: 'An in-depth empirical assessment identifying systemic gaps in secondary school infrastructure, distribution of learning resources, and recommendations for community-based educational committees.',
-    pdfPath: '#', // Configurable placeholder for actual PDF paths
+    pdfPath: '/research/Mitigating_Educational_Inequalities_Rural_Bihar_Dhananjay_Singh.pdf',
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const researchData = [
     category: 'MSME Economics',
     title: "Export Potential of Bihar's Micro-Enterprises: A Buyer Preference and Logistics Analysis",
     desc: 'A research study focusing on cross-border logistics costs for Bihar-based agricultural goods (Litchi, Makhana) and structural bottlenecks restricting direct global export contracts.',
-    pdfPath: '#',
+    pdfPath: '/research/Bihar_Micro_Enterprise_Export_Potential_Dhananjay_Singh.pdf',
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const researchData = [
     category: 'Policy Advisory',
     title: 'Corporate Governance Frameworks for Public Educational Boards: A Comparative Study',
     desc: 'A policy paper analyzing the role of independent audit committees and ethics code integration in regional board administration models across India.',
-    pdfPath: '#',
+    pdfPath: '/research/Corporate_Governance_Framework_Public_Educational_Boards_Comparative_Study.pdf',
   },
   {
     id: 4,
@@ -29,6 +29,6 @@ export const researchData = [
     category: 'Teacher Welfare',
     title: 'Socio-Economic Safety Nets for Primary and Secondary School Educators in India',
     desc: 'Investigating correlation between educator compensation parameters, social welfare policies, and teaching output performance scores across semi-urban clusters.',
-    pdfPath: '#',
+    pdfPath: '/research/Socio_Economic_Safety_Nets_for_School_Educators_India_REPAIRED.pdf',
   },
 ]

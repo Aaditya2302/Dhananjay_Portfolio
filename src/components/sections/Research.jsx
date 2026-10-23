@@ -73,7 +73,7 @@ const Research = () => {
                 <h4 className="font-montserrat font-bold text-[1.2rem] text-primary-navy mb-4 leading-[1.4]">
                   {paper.title}
                 </h4>
-                
+
                 <p className="text-text-secondary text-[0.95rem] leading-[1.6] mb-6">
                   {paper.desc}
                 </p>
@@ -86,16 +86,17 @@ const Research = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-navy text-accent-gold hover:bg-accent-gold hover:text-primary-navy-dark px-5 py-2.5 rounded-full font-semibold text-[0.8rem] transition-all duration-[200ms] flex items-center gap-1.5 cursor-pointer shadow-sm"
-                  aria-label={`Download PDF copy of ${paper.title}`}
+                  aria-label={`View PDF of ${paper.title}`}
                 >
-                  <i className="fa-solid fa-file-pdf"></i> Download PDF
+                  <i className="fa-solid fa-eye"></i> View PDF
                 </a>
                 <a
-                  href="#contact"
-                  onClick={(e) => handleScrollTo(e, '#contact')}
+                  href={paper.pdfPath}
+                  download
                   className="border border-primary-navy/10 text-primary-navy hover:border-accent-gold hover:text-accent-gold px-5 py-2.5 rounded-full font-semibold text-[0.8rem] transition-all duration-[200ms] flex items-center gap-1.5 cursor-pointer"
+                  aria-label={`Download PDF of ${paper.title}`}
                 >
-                  Request Hardcopy
+                  <i className="fa-solid fa-download"></i> Download PDF
                 </a>
               </div>
             </motion.div>

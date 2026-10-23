@@ -6,6 +6,7 @@ export const blogData = [
     title: 'How MSMEs in Bihar Can Start Export Business in 2026',
     desc: 'A step-by-step roadmap for local craftsmen and agricultural producers to bypass middlemen and list products in the global arena.',
     iconClass: 'fa-solid fa-ship',
+    pdfPath: '/articles/Bihar_MSME_Export_Business_2026_Dhananjay_Singh.pdf',
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const blogData = [
     title: 'Why Bihar Needs Export-Led Growth Models',
     desc: 'Analyzing how promoting regional goods to global markets can generate rural employment and prevent major local migration trends.',
     iconClass: 'fa-solid fa-chart-line',
+    pdfPath: '/articles/Why_Bihar_Needs_Export_Led_Growth_Dhananjay_Singh.pdf',
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ export const blogData = [
     title: 'Bridging Educational Gaps Post Pandemic',
     desc: 'Insights on using blended digital structures and focused teacher training to compensate for regional learning losses.',
     iconClass: 'fa-solid fa-school-flag',
+    pdfPath: '/articles/Bridging_Post_Pandemic_Learning_Gaps_India_Bihar_Dhananjay_Singh.pdf',
   },
   {
     id: 4,
@@ -30,5 +33,6 @@ export const blogData = [
     title: 'Corporate Governance for Emerging Leaders',
     desc: 'Key compliance mandates, transparency benchmarks, and fiduciary duties expected of independent board members.',
     iconClass: 'fa-solid fa-gavel',
+    pdfPath: '/articles/Corporate_Governance_Emerging_Leaders_Dhananjay_Singh.pdf',
   },
 ]

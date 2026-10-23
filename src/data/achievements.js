@@ -12,6 +12,7 @@ export const achievementsData = [
     categoryLabel: 'Education Campaigns',
     iconClass: 'fa-solid fa-chalkboard-user',
     title: 'Bihar Education Reform Debate',
+    videoLink: 'https://drive.google.com/file/d/1__GjnRPD-L8slwjv3nwKiQywZMa9GZ9w/view?usp=drive_link',
   },
   {
     id: 2,
@@ -19,6 +20,7 @@ export const achievementsData = [
     categoryLabel: 'Media & Debates',
     iconClass: 'fa-solid fa-tv',
     title: 'State Policy Debate Television',
+    videoLink: 'https://drive.google.com/file/d/1egCW8UTkg9CurBr0T012Jg4stuYizqmV/view?usp=drive_link',
   },
   {
     id: 3,
@@ -26,13 +28,15 @@ export const achievementsData = [
     categoryLabel: 'Social Welfare',
     iconClass: 'fa-solid fa-handshake-angle',
     title: 'Teacher Welfare Program Gaya',
+    videoLink: 'https://drive.google.com/file/d/11XAsDjJCE_klsXU7PTqNuJvv3c1Gv2K5/view?usp=sharing',
   },
   {
     id: 4,
-    category: 'media',
-    categoryLabel: 'Media & Debates',
+    category: 'education',
+    categoryLabel: 'Education Campaigns',
     iconClass: 'fa-solid fa-newspaper',
-    title: 'Export Capacity Building Press',
+    title: 'Independence Direction Board',
+    folderLink: 'https://drive.google.com/drive/folders/1FUtFZQhoCldbQAmv-chHon0Jr3GlI86F?usp=drive_link',
   },
   {
     id: 5,
@@ -40,6 +44,7 @@ export const achievementsData = [
     categoryLabel: 'Education Campaigns',
     iconClass: 'fa-solid fa-award',
     title: 'Academic Excellence Summit',
+    fbLink: 'https://www.facebook.com/share/p/1FRnTcaQYK/',
   },
   {
     id: 6,
@@ -47,6 +52,7 @@ export const achievementsData = [
     categoryLabel: 'Social Welfare',
     iconClass: 'fa-solid fa-users-line',
     title: 'Rural Literacy Support Drive',
+    fbLink: 'https://www.facebook.com/share/p/1E8DwkPKeN/',
   },
   {
     id: 7,
@@ -54,5 +60,6 @@ export const achievementsData = [
     categoryLabel: 'Social Welfare',
     iconClass: 'fa-solid fa-child-reaching',
     title: 'Safeguard Children Right to Educational Activity',
+    fbLink: 'https://www.facebook.com/share/r/1C6d6PJPWt/',
   },
 ]
