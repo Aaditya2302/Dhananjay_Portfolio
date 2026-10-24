@@ -76,8 +76,8 @@ const Achievements = () => {
                         <i className="fa-brands fa-facebook text-[0.9rem]"></i> View Post
                       </a>
                     )}
-                    {item.folderLink && (
-                      <a href={item.folderLink} target="_blank" rel="noopener noreferrer"
+                    {item.viewPdf && (
+                      <a href={item.viewPdf} target="_blank" rel="noopener noreferrer"
                         className="flex items-center gap-2 bg-accent-gold text-primary-navy-dark px-5 py-2 rounded-full font-semibold text-[0.8rem]">
                         <i className="fa-solid fa-folder-open text-[0.9rem]"></i> View Documents
                       </a>
@@ -120,8 +120,8 @@ const Achievements = () => {
                         <i className="fa-brands fa-facebook text-[0.9rem]"></i> View Post
                       </a>
                     )}
-                    {item.folderLink && (
-                      <a href={item.folderLink} target="_blank" rel="noopener noreferrer"
+                    {item.viewPdf && (
+                      <a href={item.viewPdf} target="_blank" rel="noopener noreferrer"
                         className="flex items-center gap-2 bg-accent-gold text-primary-navy-dark px-5 py-2 rounded-full font-semibold text-[0.8rem] hover:bg-accent-gold-dark transition-all duration-200"
                         onClick={(e) => e.stopPropagation()}>
                         <i className="fa-solid fa-folder-open text-[0.9rem]"></i> View Documents

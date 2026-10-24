@@ -113,25 +113,38 @@ const Hero = () => {
               </a>
             </motion.div>
             {/* CV & IDA Buttons */}
-            <motion.div className="flex flex-wrap gap-4 mt-4" variants={itemVariants}>
-              <a
-                href="/cv/Dhananjay_Singh_Board_Ready_Independent_Director_CV.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-2 border-accent-gold/50 text-accent-gold hover:bg-accent-gold hover:text-primary-navy-dark px-6 py-2.5 rounded-full font-semibold text-[0.9rem] transition-all duration-[400ms] ease-premium flex items-center gap-2 hover:-translate-y-0.5 cursor-pointer font-poppins"
-                aria-label="View Dhananjay Singh CV"
-              >
-                <i className="fa-solid fa-file-lines text-[0.85rem]"></i> View CV
-              </a>
-              <a
-                href="/cv/Dhananjay_Singh_Independent_Director_Application_Pack.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-2 border-accent-gold/50 text-accent-gold hover:bg-accent-gold hover:text-primary-navy-dark px-6 py-2.5 rounded-full font-semibold text-[0.9rem] transition-all duration-[400ms] ease-premium flex items-center gap-2 hover:-translate-y-0.5 cursor-pointer font-poppins"
-                aria-label="View Independent Director Application Pack"
-              >
-                <i className="fa-solid fa-file-lines text-[0.85rem]"></i> View IDA
-              </a>
+            <motion.div className="flex flex-col gap-3 mt-4" variants={itemVariants}>
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="/cv/Dhananjay_Singh_Board_Ready_Independent_Director_CV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-2 border-accent-gold/50 text-accent-gold hover:bg-accent-gold hover:text-primary-navy-dark px-6 py-2.5 rounded-full font-semibold text-[0.9rem] transition-all duration-[400ms] ease-premium flex items-center gap-2 hover:-translate-y-0.5 cursor-pointer font-poppins"
+                  aria-label="View Dhananjay Singh CV"
+                >
+                  <i className="fa-solid fa-file-lines text-[0.85rem]"></i> View CV
+                </a>
+                <a
+                  href="/cv/Dhananjay_Singh_Independent_Director_Application_Pack.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-2 border-accent-gold/50 text-accent-gold hover:bg-accent-gold hover:text-primary-navy-dark px-6 py-2.5 rounded-full font-semibold text-[0.9rem] transition-all duration-[400ms] ease-premium flex items-center gap-2 hover:-translate-y-0.5 cursor-pointer font-poppins"
+                  aria-label="View Independent Director Application Pack"
+                >
+                  <i className="fa-solid fa-file-lines text-[0.85rem]"></i> View IDA
+                </a>
+              </div>
+              <div>
+                <a
+                  href="/cv/ProfessionalCertificate.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-2 border-accent-gold/50 text-accent-gold hover:bg-accent-gold hover:text-primary-navy-dark px-6 py-2.5 rounded-full font-semibold text-[0.9rem] transition-all duration-[400ms] ease-premium flex items-center gap-2 hover:-translate-y-0.5 cursor-pointer font-poppins w-fit"
+                  aria-label="View Professional Certificate"
+                >
+                  <i className="fa-solid fa-file-lines text-[0.85rem]"></i> View Professional Certificate
+                </a>
+              </div>
             </motion.div>
           </div>
           {/* Portrait Fallback Right */}
