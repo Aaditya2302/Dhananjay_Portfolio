@@ -44,7 +44,7 @@ export const achievementsData = [
     categoryLabel: 'Education Campaigns',
     iconClass: 'fa-solid fa-award',
     title: 'Academic Excellence Summit',
-    viewPdf: 'public/cv/excellenceSummit.jpeg',
+    viewPdf: '/cv/excellenceSummit.jpeg',
   },
   {
     id: 6,

@@ -30,7 +30,7 @@ export const galleryData = [
     categoryLabel: 'Awards',
     iconClass: 'fa-solid fa-medal',
     title: 'Reward & Recognition',
-    viewPdf: 'public/cv/Reward&Recognition.pdf',
+    viewPdf: '/cv/RewardandRecognition.pdf',
   },
   {
     id: 4,
@@ -54,7 +54,7 @@ export const galleryData = [
     categoryLabel: 'Awards',
     iconClass: 'fa-solid fa-business-time',
     title: 'Profession Post Holds',
-    viewPdf: 'public/cv/ProfessionPost.pdf',
+    viewPdf: '/cv/ProfessionPost.pdf',
   },
   {
     id: 7,
@@ -62,7 +62,7 @@ export const galleryData = [
     categoryLabel: 'Awards',
     iconClass: 'fa-solid fa-business-time',
     title: 'Academic Certificates',
-    viewPdf: 'public/cv/AcademicCertificates.pdf',
+    viewPdf: '/cv/AcademicCertificates.pdf',
   },
   {
     id: 8,
@@ -70,7 +70,7 @@ export const galleryData = [
     categoryLabel: 'Social Campaigns',
     iconClass: 'fa-solid fa-hands-holding',
     title: 'Media Coverage',
-    viewPdf: 'public/cv/MediaCoverage.pdf',
+    viewPdf: '/cv/MediaCoverage.pdf',
   },
   {
     id: 9,
@@ -78,6 +78,6 @@ export const galleryData = [
     categoryLabel: 'Social Campaigns',
     iconClass: 'fa-solid fa-hands-holding',
     title: 'Stake Holder Engagement',
-    viewPdf: 'public/cv/StakeHolderEngagement.pdf',
+    viewPdf: '/cv/StakeHolderEngagement.pdf',
   },
 ]
