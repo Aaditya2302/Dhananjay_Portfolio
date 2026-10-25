@@ -116,93 +116,110 @@ const Hero = () => {
               </a>
             </motion.div>
 
-            {/* CV, IDA & Certificate Buttons */}
-            <motion.div className="flex flex-col gap-3 mt-4" variants={itemVariants}>
-              {/* Row 1 — CV & IDA */}
-              <div className="flex flex-wrap gap-4">
+            {/* CV, IDA, Certificate & Stakeholder Buttons */}
+            <motion.div className="mt-6" variants={itemVariants}>
+              <div className="grid grid-cols-2 gap-3 w-fit">
+                {/* CV */}
                 <a
                   href="/cv/Dhananjay_Singh_Board_Ready_Independent_Director_CV.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border-2 border-accent-gold/50 text-accent-gold hover:bg-accent-gold hover:text-primary-navy-dark px-6 py-2.5 rounded-full font-semibold text-[0.9rem] transition-all duration-[400ms] ease-premium flex items-center gap-2 hover:-translate-y-0.5 cursor-pointer font-poppins"
+                  className="border-2 border-accent-gold/50 text-accent-gold hover:bg-accent-gold hover:text-primary-navy-dark px-4 py-3 rounded-2xl font-semibold text-[0.8rem] transition-all duration-[400ms] ease-premium flex items-center gap-2.5 cursor-pointer font-poppins"
                 >
-                  <i className="fa-solid fa-file-lines text-[0.85rem]"></i> View CV
+                  <i className="fa-solid fa-file-lines text-[1rem]"></i>
+                  <div className="flex flex-col leading-tight">
+                    <span className="text-[0.65rem] text-accent-gold/60 uppercase tracking-wider">View</span>
+                    <span>CV</span>
+                  </div>
                 </a>
+
+                {/* IDA */}
                 <a
                   href="/cv/Dhananjay_Singh_Independent_Director_Application_Pack.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border-2 border-accent-gold/50 text-accent-gold hover:bg-accent-gold hover:text-primary-navy-dark px-6 py-2.5 rounded-full font-semibold text-[0.9rem] transition-all duration-[400ms] ease-premium flex items-center gap-2 hover:-translate-y-0.5 cursor-pointer font-poppins"
+                  className="border-2 border-accent-gold/50 text-accent-gold hover:bg-accent-gold hover:text-primary-navy-dark px-4 py-3 rounded-2xl font-semibold text-[0.8rem] transition-all duration-[400ms] ease-premium flex items-center gap-2.5 cursor-pointer font-poppins"
                 >
-                  <i className="fa-solid fa-file-lines text-[0.85rem]"></i> View IDA
+                  <i className="fa-solid fa-file-contract text-[1rem]"></i>
+                  <div className="flex flex-col leading-tight">
+                    <span className="text-[0.65rem] text-accent-gold/60 uppercase tracking-wider">View</span>
+                    <span>IDA</span>
+                  </div>
                 </a>
-              </div>
 
-              {/* Row 2 — Certificate Dropdown */}
-              {/* Row 2 — Certificate Modal Trigger */}
-              <div>
+                {/* Certificate */}
                 <button
                   onClick={() => setCertOpen(true)}
-                  className="border-2 border-accent-gold/50 text-accent-gold hover:bg-accent-gold hover:text-primary-navy-dark px-6 py-2.5 rounded-full font-semibold text-[0.9rem] transition-all duration-[400ms] ease-premium flex items-center gap-2 hover:-translate-y-0.5 cursor-pointer font-poppins"
+                  className="border-2 border-accent-gold/50 text-accent-gold hover:bg-accent-gold hover:text-primary-navy-dark px-4 py-3 rounded-2xl font-semibold text-[0.8rem] transition-all duration-[400ms] ease-premium flex items-center gap-2.5 cursor-pointer font-poppins"
                 >
-                  <i className="fa-solid fa-file-lines text-[0.85rem]"></i> View Professional Certificate
-                </button>
-              </div>
-
-              {/* Certificate Modal */}
-              {certOpen && (
-                <div className="fixed inset-0 z-[999] flex items-center justify-center px-4"
-                  onClick={() => setCertOpen(false)}
-                >
-                  {/* Backdrop */}
-                  <div className="absolute inset-0 bg-primary-navy/80 backdrop-blur-sm" />
-
-                  {/* Modal Box */}
-                  <div
-                    className="relative z-10 bg-primary-navy border border-accent-gold/30 rounded-2xl p-8 w-full max-w-[420px] shadow-2xl"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    {/* Title */}
-                    <h3 className="font-montserrat font-bold text-[1.2rem] text-bg-white text-center mb-2">
-                      Professional Certificates
-                    </h3>
-                    <p className="text-text-secondary text-[0.85rem] text-center mb-6 font-poppins">
-                      Select a certificate to view
-                    </p>
-
-                    {/* Certificate Buttons */}
-                    <div className="flex flex-col sm:flex-row gap-3 mb-6">
-                      <a
-                        href="/cv/ProfessionalCertificate.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={() => setCertOpen(false)}
-                        className="flex-1 flex items-center justify-center gap-2 border-2 border-accent-gold/50 text-accent-gold hover:bg-accent-gold hover:text-primary-navy-dark px-5 py-3 rounded-full font-semibold text-[0.85rem] font-poppins transition-all duration-200"
-                      >
-                        <i className="fa-solid fa-certificate text-[0.85rem]"></i> Certificate 1
-                      </a>
-                      <a
-                        href="/cv/ProfessionalCertificate2.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={() => setCertOpen(false)}
-                        className="flex-1 flex items-center justify-center gap-2 border-2 border-accent-gold/50 text-accent-gold hover:bg-accent-gold hover:text-primary-navy-dark px-5 py-3 rounded-full font-semibold text-[0.85rem] font-poppins transition-all duration-200"
-                      >
-                        <i className="fa-solid fa-certificate text-[0.85rem]"></i> Certificate 2
-                      </a>
-                    </div>
-
-                    {/* Close Button */}
-                    <button
-                      onClick={() => setCertOpen(false)}
-                      className="w-full bg-accent-gold/10 hover:bg-accent-gold/20 text-accent-gold border border-accent-gold/20 py-2.5 rounded-full font-semibold text-[0.85rem] font-poppins transition-all duration-200"
-                    >
-                      Close
-                    </button>
+                  <i className="fa-solid fa-certificate text-[1rem]"></i>
+                  <div className="flex flex-col leading-tight text-left">
+                    <span className="text-[0.65rem] text-accent-gold/60 uppercase tracking-wider">View</span>
+                    <span>Certificate</span>
                   </div>
-                </div>
-              )}
+                </button>
+
+                {/* Stakeholder */}
+                <a
+                  href="https://ap.wps.com/cms/docs/d/cbCaed2qDGaMsU2d?lg=en-US&sa=601.1074&ps=1&fn=Stakeholder_Engagement_Photos_and_Typed_Captions_20261025071019.pdf&refer=whatsapp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-2 border-accent-gold/50 text-accent-gold hover:bg-accent-gold hover:text-primary-navy-dark px-4 py-3 rounded-2xl font-semibold text-[0.8rem] transition-all duration-[400ms] ease-premium flex items-center gap-2.5 cursor-pointer font-poppins"
+                >
+                  <i className="fa-solid fa-handshake text-[1rem]"></i>
+                  <div className="flex flex-col leading-tight">
+                    <span className="text-[0.65rem] text-accent-gold/60 uppercase tracking-wider">View</span>
+                    <span>Stakeholder</span>
+                  </div>
+                </a>
+              </div>
             </motion.div>
+
+            {/* Certificate Modal — unchanged */}
+            {certOpen && (
+              <div className="fixed inset-0 z-[999] flex items-center justify-center px-4"
+                onClick={() => setCertOpen(false)}
+              >
+                <div className="absolute inset-0 bg-primary-navy/80 backdrop-blur-sm" />
+                <div
+                  className="relative z-10 bg-primary-navy border border-accent-gold/30 rounded-2xl p-8 w-full max-w-[420px] shadow-2xl"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <h3 className="font-montserrat font-bold text-[1.2rem] text-bg-white text-center mb-2">
+                    Professional Certificates
+                  </h3>
+                  <p className="text-text-secondary text-[0.85rem] text-center mb-6 font-poppins">
+                    Select a certificate to view
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-3 mb-6">
+                    <a
+                      href="/cv/ProfessionalCertificate.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setCertOpen(false)}
+                      className="flex-1 flex items-center justify-center gap-2 border-2 border-accent-gold/50 text-accent-gold hover:bg-accent-gold hover:text-primary-navy-dark px-5 py-3 rounded-full font-semibold text-[0.85rem] font-poppins transition-all duration-200"
+                    >
+                      <i className="fa-solid fa-certificate text-[0.85rem]"></i> Certificate 1
+                    </a>
+                    <a
+                      href="/cv/ProfessionalCertificate2.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setCertOpen(false)}
+                      className="flex-1 flex items-center justify-center gap-2 border-2 border-accent-gold/50 text-accent-gold hover:bg-accent-gold hover:text-primary-navy-dark px-5 py-3 rounded-full font-semibold text-[0.85rem] font-poppins transition-all duration-200"
+                    >
+                      <i className="fa-solid fa-certificate text-[0.85rem]"></i> Certificate 2
+                    </a>
+                  </div>
+                  <button
+                    onClick={() => setCertOpen(false)}
+                    className="w-full bg-accent-gold/10 hover:bg-accent-gold/20 text-accent-gold border border-accent-gold/20 py-2.5 rounded-full font-semibold text-[0.85rem] font-poppins transition-all duration-200"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Portrait Right */}

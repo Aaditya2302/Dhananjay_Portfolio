@@ -72,12 +72,4 @@ export const galleryData = [
     title: 'Media Coverage',
     viewPdf: '/cv/MediaCoverage.pdf',
   },
-  {
-    id: 9,
-    category: 'social',
-    categoryLabel: 'Social Campaigns',
-    iconClass: 'fa-solid fa-hands-holding',
-    title: 'Stake Holder Engagement',
-    viewPdf: '/cv/StakeHolderEngagement.pdf',
-  },
 ]
